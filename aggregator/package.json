@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/scotthaley/iot-hackathon/issues"
   },
-  "homepage": "https://github.com/scotthaley/iot-hackathon#readme"
+  "homepage": "https://github.com/scotthaley/iot-hackathon#readme",
+  "dependencies": {
+    "azure-event-hubs": "0.0.4"
+  }
 }
