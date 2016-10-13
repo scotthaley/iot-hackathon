@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/scotthaley/iot-hackathon#readme",
   "dependencies": {
-    "azure-event-hubs": "0.0.4"
+    "azure-event-hubs": "0.0.4",
+    "promised-mongo": "^1.2.0"
   }
 }
