@@ -5,8 +5,8 @@ var pmongo = require('promised-mongo');
 var EventHubClient = require('azure-event-hubs').Client;
 var connectionString = 'HostName=IoTHackathon.azure-devices.net;SharedAccessKeyName=iothubowner;SharedAccessKey=I9lw6xcoqdIM+7RL9W5/QfNvPN2sDkcPjEnI47Q/Yhg=';
 
-let mongo_url = "mongodb://localhost:27017/aggregator";
-let db = pmongo(mongo_url, ['data']);
+var mongo_url = "mongodb://localhost:27017/aggregator";
+var db = pmongo(mongo_url, ['data']);
 
 
 var printError = function (err) {
@@ -17,7 +17,7 @@ var printMessage = function (message) {
   console.log('Message received: ');
   console.log(JSON.stringify(message.body));
   console.log('');
-  db.data.insert(message.body));
+  db.data.insert(message.body);
 };
 
 var client = EventHubClient.fromConnectionString(connectionString);
