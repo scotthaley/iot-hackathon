@@ -1,0 +1,15 @@
+{
+  "name": "iot-hackathon-simulated",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Scott Haley",
+  "license": "ISC",
+  "dependencies": {
+    "azure-iot-device": "^1.0.15",
+    "azure-iot-device-amqp": "^1.0.15"
+  }
+}
