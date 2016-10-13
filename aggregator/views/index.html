@@ -1,0 +1,26 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+<div>
+  <table>
+    <tr>
+      <th>Device ID</th>
+      <th>MAC Address</th>
+      <th>Date</th>
+    </tr>
+    {% set alternate = false %}
+    {% for dp in dataPoints %}
+      {% if alternate %}
+        <tr class="alternate">
+      {% else %}
+        <tr>
+      {% endif %}
+        <td>{{ dp.deviceId }}</td>
+        <td>{{ dp.address }}</td>
+        <td>{{ dp.date }}</td>
+      </tr>
+      {% set alternate = !alternate %}
+    {% endfor %}
+  </table>
+</div>
+{% endblock %}
